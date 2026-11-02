@@ -1,0 +1,23 @@
+<launch>
+  <node pkg="fastlio_traversability_mapper" type="traversability_mapper_node.py"
+        name="fastlio_traversability_mapper" output="screen">
+    <param name="cloud_topic" value="/cloud_registered" />
+    <param name="odom_topic" value="/Odometry" />
+    <param name="world_frame" value="camera_init" />
+    <param name="map_resolution" value="0.15" />
+    <param name="terrain_resolution" value="0.1" />
+    <param name="save_path" value="$(env HOME)/trav.pcd" />
+    <param name="sync_slop" value="0.10" />
+    <param name="vehicle_length" value="0.1" />
+    <param name="vehicle_width" value="0.1" />
+    <param name="vehicle_wheelbase" value="0.1" />
+    <param name="vehicle_ground_clearance" value="0.1" />
+    <param name="vehicle_safety_margin" value="0.0025" />
+    <param name="export_gazebo_model" value="true" />
+    <param name="gazebo_model_name" value="fastlio_terrain" />
+    <param name="mesh_max_triangle_edge" value="0.75" />
+    <param name="temporal_window_frames" value="30" />
+    <param name="dynamic_min_hits" value="4" />
+    <param name="dynamic_max_age_frames" value="20" />
+  </node>
+</launch>
