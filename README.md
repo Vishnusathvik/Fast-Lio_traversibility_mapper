@@ -33,9 +33,18 @@ The traversability mapper has been tested using publicly available LiDAR dataset
 
 ### Newer College Dataset — Ouster OS1-64
 
+The Newer College Dataset was collected at New College, Oxford, and provides LiDAR–IMU recordings across challenging sequences with motion, vegetation, and built environments. It supports research in LiDAR odometry, localization, and mapping.
+Sensor configurations: Ouster OS1-64 and OS0-128.
+Visualization — Ouster OS1-64
+Official dataset: https://github.com/ori-drs/newer-college-dataset
+
 ![Newer College traversability mapping](outputs/NCD_data_64_git.gif)
 
 ### TIERS Outdoor Dataset — Ouster OS0-128
+The TIERS dataset provides multi-sensor LiDAR recordings across different environments, including outdoor and indoor scenes. It is useful for evaluating LiDAR odometry, mapping, and perception across different sensor configurations.
+Sensor configurations: Ouster OS0-128 and OS1-64.
+Visualization — Outdoor, Ouster OS0-128
+Official dataset: https://github.com/TIERS/tiers-lidars-dataset
 
 ![TIERS outdoor traversability mapping](outputs/TIERS_Outdoor_128_git.gif)
 
