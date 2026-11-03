@@ -1,4 +1,4 @@
-# FAST-LIO2 separate traversability mapper (ROS1 Noetic)
+# 3D LiDAR-Based Traversability Mapping Using FAST-LIO2 LiDAR–Inertial Odometry
 
 This is a separate ROS1 package. It does not patch, rebuild, or change FAST-LIO2 source. The original FAST-LIO2 PCD save behavior and filenames remain untouched; this package only writes `trav.pcd`.
 
